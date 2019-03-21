@@ -1,7 +1,9 @@
 {
   "name": "chrisdennett-co-uk",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free": "^5.8.0",
@@ -10,10 +12,13 @@
     "@fortawesome/free-brands-svg-icons": "^5.8.0",
     "@fortawesome/free-solid-svg-icons": "^5.8.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@rmwc/button": "^5.2.1",
+    "@rmwc/card": "^5.2.1",
+    "@rmwc/typography": "^5.2.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "rmwc": "^1.8.3"
+    "react-scripts": "^2.1.8",
+    "rmwc": "^5.2.0"
   },
   "devDependencies": {},
   "scripts": {

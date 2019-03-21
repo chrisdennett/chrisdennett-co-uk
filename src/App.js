@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // ui
-import { Button } from "rmwc/Button";
+import "@material/button/dist/mdc.button.css";
+import { Button } from "@rmwc/button";
 // styles
 import "material-components-web/dist/material-components-web.min.css";
 import "./app.css";
