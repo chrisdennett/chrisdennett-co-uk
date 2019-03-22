@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@material/button/dist/mdc.button.css";
 import { Button } from "@rmwc/button";
 // styles
-import "material-components-web/dist/material-components-web.min.css";
+// import "material-components-web/dist/material-components-web.min.css";
 import "./app.css";
 // comps
 import SocialMediaLinks from "./comps/SocialMediaLinks";
@@ -19,8 +19,7 @@ class App extends Component {
             <h1>Chris Dennett</h1>
             <p className={"address"}>Ulverston, Cumbria, UK</p>
             <p className={"biog"}>
-              Web designer, developer and occasional maker of weird digital art
-              thingies.
+              Web developer and occasional maker of weird digital art thingies.
             </p>
             <a
               href="https://www.buymeacoffee.com/gBw6u42LI"
