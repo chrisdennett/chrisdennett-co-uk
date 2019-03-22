@@ -15,8 +15,18 @@ import {
   CardActionButtons,
   CardActionIcons
 } from "@rmwc/card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const ProjectCard = ({ title, subtitle, img, description, children, url }) => {
+const ProjectCard = ({
+  title,
+  subtitle,
+  img,
+  description,
+  children,
+  url,
+  twitter
+}) => {
   return (
     <Card style={{ width: 300, margin: 20 }}>
       <CardPrimaryAction
@@ -26,8 +36,8 @@ const ProjectCard = ({ title, subtitle, img, description, children, url }) => {
         rel="noopener noreferrer"
       >
         <CardMedia
+          sixteenByNine
           style={{
-            height: 160,
             backgroundImage: `url(./${img})`
           }}
         />
@@ -69,6 +79,23 @@ const ProjectCard = ({ title, subtitle, img, description, children, url }) => {
             target="_blank"
             rel="noopener noreferrer"
           />
+          {twitter && (
+            <CardActionIcon
+              icon={
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  style={{
+                    width: 20,
+                    verticalAlign: "baseline"
+                  }}
+                />
+              }
+              tag={"a"}
+              href={twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+          )}
         </CardActionIcons>
       </CardActions>
     </Card>
