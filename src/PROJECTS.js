@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "The Eye Project",
+    subtitle: "Free interactive diagrams for schools?",
+    url: "https://eye-diagram.netlify.com/",
+    type: "website",
+    description:
+      "I'm looking for a way to freelance directly for teachers, making useful web things.",
+    img: "/img/the-eye-project.png"
+  },
+  {
     title: "Binary Hands",
     subtitle: "Count 100x higher with binary",
     description: "Counting to 10 is so base 10! Let's go higher.",
@@ -15,7 +24,7 @@ export const projects = [
     type: "website",
     description:
       "Originally made as a place to store my daughters' endless artworks. Now available for all.",
-    img: "artfly.PNG"
+    img: "/img/artfly.PNG"
   },
   {
     title: "Dalton Poppy Plaques",
@@ -24,7 +33,7 @@ export const projects = [
     type: "website",
     description:
       "In commemoration of the young men of Dalton who gave their lives in WW1.",
-    img: "poppies-pic.PNG"
+    img: "/img/poppies-pic.PNG"
   },
   {
     title: "Mutilated Selfie Booth",
@@ -33,6 +42,6 @@ export const projects = [
     type: "youtube",
     description:
       "An interactive digital artwork for Ulverston's Candlelit Walk.",
-    img: "selfie.PNG"
+    img: "/img/selfie.PNG"
   }
 ];

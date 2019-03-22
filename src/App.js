@@ -60,7 +60,7 @@ class App extends Component {
           <section>
             <h2 className={"sectionHeader"}>Recent Projects</h2>
             <p className={"sectionSubheader"}>
-              The things I made between freelance work.
+              The things I make inbetween freelance work.
             </p>
             <div className={"currentProjects"}>
               {projects.map(project => {
