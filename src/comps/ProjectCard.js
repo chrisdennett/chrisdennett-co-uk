@@ -9,9 +9,11 @@ import {
   Card,
   CardPrimaryAction,
   CardMedia,
-  CardAction,
+  CardActionButton,
+  CardActionIcon,
   CardActions,
-  CardActionButtons
+  CardActionButtons,
+  CardActionIcons
 } from "@rmwc/card";
 
 const ProjectCard = ({ title, subtitle, img, description, children, url }) => {
@@ -36,32 +38,38 @@ const ProjectCard = ({ title, subtitle, img, description, children, url }) => {
           <Typography
             use="subtitle2"
             tag="h3"
-            theme="text-secondary-on-background"
+            theme="textSecondaryOnBackground"
             style={{ marginTop: "-1rem" }}
           >
             {subtitle}
           </Typography>
-          <Typography
-            use="body1"
-            tag="div"
-            theme="text-secondary-on-background"
-          >
+          <Typography use="body1" tag="div" theme="textSecondaryOnBackground">
             {description}
           </Typography>
         </div>
       </CardPrimaryAction>
       <CardActions>
         <CardActionButtons>
-          <CardAction
+          <CardActionButton
             tag={"a"}
             href={url}
             target="_blank"
             rel="noopener noreferrer"
           >
             {title}
-          </CardAction>
+          </CardActionButton>
           {children}
         </CardActionButtons>
+
+        <CardActionIcons>
+          <CardActionIcon
+            icon="launch"
+            tag={"a"}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+        </CardActionIcons>
       </CardActions>
     </Card>
   );
