@@ -15,21 +15,6 @@ const DetailsHeader = () => {
         <p className={"details-header--main--biog"}>
           Web developer and occasional maker of weird digital art thingies.
         </p>
-        <a
-          href="https://www.buymeacoffee.com/gBw6u42LI"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
-            alt="Buy Me A Coffee"
-            style={{
-              marginTop: 10,
-              height: "auto !important",
-              width: "auto !important"
-            }}
-          />
-        </a>
       </div>
       <div className={"details-header--contactLinks"}>
         <SocialMediaLinks

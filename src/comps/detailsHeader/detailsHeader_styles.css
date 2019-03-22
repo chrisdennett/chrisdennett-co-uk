@@ -1,17 +1,15 @@
 .details-header {
-  /*margin: 10px;*/
-  /*border-left: 2px solid rgba(0, 0, 0, 1);*/
-  /*border-top: 2px solid rgba(0, 0, 0, 1);*/
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  background: #fedd2e;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* background-color: white; */
 }
 
 .details-header--main {
   min-width: 290px;
+  flex: 1;
   padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .details-header--main--address {
@@ -20,7 +18,7 @@
 
 .details-header--main--biog {
   padding-top: 10px;
-  max-width: 450px;
+  /* max-width: 450px; */
 }
 
 .details-header--contactLinks {
@@ -32,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .details-header--contactLinks--email-holder {

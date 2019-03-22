@@ -16,6 +16,22 @@ const JumpingVictorianLady = () => {
       </Typography>
 
       <SocialMediaLinks className={"footer--links"} />
+
+      <a
+        href="https://www.buymeacoffee.com/gBw6u42LI"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
+          alt="Buy Me A Coffee"
+          style={{
+            height: "auto !important",
+            width: "auto !important",
+            boxShadow: "none"
+          }}
+        />
+      </a>
     </div>
   );
 };
