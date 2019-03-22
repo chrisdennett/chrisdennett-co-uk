@@ -6,14 +6,14 @@ export const projects = [
     type: "website",
     description:
       "I'm looking for a way to freelance directly for teachers, making useful web things.",
-    img: "/img/the-eye-project.png"
+    img: "/img/the-eye-project_400x225.png"
   },
   {
     title: "Binary Hands",
     subtitle: "Count 100x higher with binary",
     description: "Counting to 10 is so base 10! Let's go higher.",
     type: "website",
-    img: "/img/binary-hands.png",
+    img: "/img/binary-hands_400x225.png",
     url: "https://lab.artfly.io/binary-hands",
     twitter: "https://twitter.com/artflychris/status/1088123222745329671"
   },
@@ -24,7 +24,7 @@ export const projects = [
     type: "website",
     description:
       "Originally made as a place to store my daughters' endless artworks. Now available for all.",
-    img: "/img/artfly.PNG"
+    img: "/img/artfly_400x188.png"
   },
   {
     title: "Dalton Poppy Plaques",
@@ -33,7 +33,7 @@ export const projects = [
     type: "website",
     description:
       "In commemoration of the young men of Dalton who gave their lives in WW1.",
-    img: "/img/poppies-pic.PNG"
+    img: "/img/poppies-pic_400x304.png"
   },
   {
     title: "Mutilated Selfie Booth",
@@ -42,6 +42,6 @@ export const projects = [
     type: "youtube",
     description:
       "An interactive digital artwork for Ulverston's Candlelit Walk.",
-    img: "/img/selfie.PNG"
+    img: "/img/selfie_400x233.png"
   }
 ];
