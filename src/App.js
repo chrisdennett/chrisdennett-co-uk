@@ -6,52 +6,17 @@ import { Button } from "@rmwc/button";
 // import "material-components-web/dist/material-components-web.min.css";
 import "./app.css";
 // comps
-import SocialMediaLinks from "./comps/SocialMediaLinks";
 import JumpingVictorianLady from "./comps/JumpingVictorianLady";
 import ProjectCard from "./comps/ProjectCard";
 // data
 import { projects } from "./PROJECTS";
+import DetailsHeader from "./comps/detailsHeader/DetailsHeader";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <header>
-          <div className={"header--aboutMe"}>
-            <h1>Chris Dennett</h1>
-            <p className={"address"}>Ulverston, Cumbria, UK</p>
-            <p className={"biog"}>
-              Web developer and occasional maker of weird digital art thingies.
-            </p>
-            <a
-              href="https://www.buymeacoffee.com/gBw6u42LI"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
-                alt="Buy Me A Coffee"
-                style={{
-                  marginTop: 10,
-                  height: "auto !important",
-                  width: "auto !important"
-                }}
-              />
-            </a>
-          </div>
-          <div className={"header--contactLinks"}>
-            <SocialMediaLinks className={"header--socialMediaLinks"} />
-            <p className={"email"}>
-              <a
-                href="mailto:chrisdennett@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                chrisdennett@gmail.com
-              </a>
-            </p>
-          </div>
-        </header>
+        <DetailsHeader />
 
         {/* 
             RECENT PROJECTS 
