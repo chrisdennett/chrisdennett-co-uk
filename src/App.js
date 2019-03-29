@@ -23,10 +23,12 @@ class App extends Component {
         */}
         <main>
           <section>
-            <h2 className={"sectionHeader"}>Recent Projects</h2>
-            <p className={"sectionSubheader"}>
-              The things I make inbetween freelance work.
-            </p>
+            <div className={"sectionHeader"}>
+              <h2 className={"sectionTitle"}>Recent Projects</h2>
+              <p className={"sectionSubtitle"}>
+                The things I make inbetween freelance work.
+              </p>
+            </div>
             <div className={"currentProjects"}>
               {projects.map(project => {
                 return <ProjectCard key={project.url} {...project} />;
@@ -34,8 +36,15 @@ class App extends Component {
             </div>
           </section>
 
-          <section>
-            <h2 className={"sectionHeader"}>Quick links to other things</h2>
+          <section className="otherThings">
+            <div className={"sectionHeader"}>
+              <h2 className={"sectionTitle"}>Quick things</h2>
+              <p className={"sectionSubtitle"}>
+                I'd love to be able to tell you there's a good reason for this
+                section, but really it's just projects I've not got round to
+                taking a screen shot for!
+              </p>
+            </div>
             <ul>
               <li>
                 <Button
@@ -98,19 +107,6 @@ class App extends Component {
                 </Button>{" "}
                 A bit of stop-motion software I made a long time ago.
               </li>
-              <li>
-                <Button
-                  raised
-                  tag={"a"}
-                  href="https://abcoutsourcing.uk.com/#/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ABC Outsourcing
-                </Button>{" "}
-                A simple business website I made for our neighbours a while
-                back.
-              </li>
             </ul>
           </section>
 
@@ -138,8 +134,14 @@ class App extends Component {
                         </ul>
                     </section>*/}
 
-          <section className={"section--centered"}>
-            <h2>Twitter feed</h2>
+          <section className={"section--twitter"}>
+            <div className={"sectionHeader"}>
+              <h2 className={"sectionTitle"}>Twitterings</h2>
+              <p className={"sectionSubtitle"}>
+                The things I scroll through, prod and gaze at when I should
+                really be doing life.
+              </p>
+            </div>
             <iframe
               className={"socialMediaStuff--iFrame"}
               title={"@ArtFlyChris Twitter Feed"}
