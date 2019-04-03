@@ -45,9 +45,10 @@ class App extends Component {
                 taking a screen shot for!
               </p>
             </div>
-            <ul>
+            <ul className={"otherThings--list"}>
               <li>
                 <Button
+                  style={{ background: "steelblue" }}
                   raised
                   tag={"a"}
                   href="https://lab.artfly.io/portrait-grids"
@@ -61,6 +62,7 @@ class App extends Component {
               </li>
               <li>
                 <Button
+                  style={{ background: "steelblue" }}
                   raised
                   tag={"a"}
                   href="https://lab.artfly.io/pixel-stretcher"
@@ -73,6 +75,7 @@ class App extends Component {
               </li>
               <li>
                 <Button
+                  style={{ background: "steelblue" }}
                   raised
                   tag={"a"}
                   href="https://lab.artfly.io/colour-splitter"
@@ -85,6 +88,7 @@ class App extends Component {
               </li>
               <li>
                 <Button
+                  style={{ background: "steelblue" }}
                   raised
                   tag={"a"}
                   href="https://www.youtube.com/watch?v=W-JYQq7jBhI"
@@ -97,6 +101,7 @@ class App extends Component {
               </li>
               <li>
                 <Button
+                  style={{ background: "steelblue" }}
                   raised
                   tag={"a"}
                   href="https://ticklypictures.com/projects/jellycam/"
@@ -110,30 +115,6 @@ class App extends Component {
             </ul>
           </section>
 
-          {/*<section>
-                        <h2>Likes</h2>
-                        <ul>
-                            <li>
-                                Coffee
-                            </li>
-                            <li>
-                                Skimming stones
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Dislikes</h2>
-                        <ul>
-                            <li>
-                                Eating sounds made by other people
-                            </li>
-                            <li>
-                                When films about children skip ahead to them later in life
-                            </li>
-                        </ul>
-                    </section>*/}
-
           <section className={"section--twitter"}>
             <div className={"sectionHeader"}>
               <h2 className={"sectionTitle"}>Twitterings</h2>
@@ -142,11 +123,14 @@ class App extends Component {
                 really be doing life.
               </p>
             </div>
-            <iframe
-              className={"socialMediaStuff--iFrame"}
-              title={"@ArtFlyChris Twitter Feed"}
-              src="/twitter-feed.html"
-            />
+
+            <div className={"socialMediaStuff--iFrame-holder"}>
+              <iframe
+                className={"socialMediaStuff--iFrame"}
+                title={"@ArtFlyChris Twitter Feed"}
+                src="/twitter-feed.html"
+              />
+            </div>
           </section>
         </main>
         <JumpingVictorianLady />
