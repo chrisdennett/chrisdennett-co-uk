@@ -50,7 +50,7 @@ class App extends Component {
         <Ruler />
 
         {/* RECENT PROJECTS */}
-        <section>
+        <section className={"content-section"}>
           <div className={"sectionHeader"}>
             <h2 className={"sectionTitle"}>Recent Projects</h2>
             <p className={"sectionSubtitle"}>
@@ -67,7 +67,7 @@ class App extends Component {
         <Ruler />
 
         {/* ARCHIVE */}
-        <section className="otherThings">
+        <section className="content-section otherThings">
           <div className={"sectionHeader"}>
             <h2 className={"sectionTitle"}>Quick things</h2>
             <p className={"sectionSubtitle"}>
