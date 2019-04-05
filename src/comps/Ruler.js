@@ -1,19 +1,21 @@
 import React from "react";
 
 const Ruler = () => {
-  const tickY1 = "0%";
-  const tinyTickY2 = "10%";
-  const smallTickY2 = "15%";
-  const midTickY2 = "25%";
-  const tallTickY2 = "30%";
+  const height = 45;
+
+  const tickY1 = 0;
+  const tinyTickY2 = height * 0.1;
+  const smallTickY2 = height * 0.15;
+  const midTickY2 = height * 0.25;
+  const tallTickY2 = height * 0.5;
 
   return (
-    <svg width={"100%"} height={50}>
+    <svg width={"100%"} height={height}>
       <defs>
         <pattern
           id="inchTicks"
           width="1in"
-          height="100%"
+          height={height}
           patternUnits="userSpaceOnUse"
           stroke={"white"}
         >
@@ -29,19 +31,19 @@ const Ruler = () => {
         </pattern>
       </defs>
 
-      <g transform={"translate(0, 25)"}>
-        <rect width="100%" height="100%" fill="url(#inchTicks)" />
+      <g transform={`translate(0, ${height / 2})`}>
+        <rect width="100%" height={height / 2} fill="url(#inchTicks)" />
       </g>
 
-      <g transform={"scale(1, -1) translate(0, -25)"}>
-        <rect width="100%" height="100%" fill="url(#inchTicks)" />
+      <g transform={`scale(1, -1) translate(0, -${height / 2})`}>
+        <rect width="100%" height={height / 2} fill="url(#inchTicks)" />
       </g>
 
       <line
         x1={0}
         x2={"100%"}
-        y1={25}
-        y2={25}
+        y1={"50%"}
+        y2={"50%"}
         strokeWidth={3}
         stroke={"#f0ece3b6"}
       />

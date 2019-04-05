@@ -45,11 +45,14 @@ li {
 }
 
 .sectionHeader {
-  padding: 4vw;
+  padding: 0 4vw 3vw 4vw;
+  max-width: 800px;
+  text-align: center;
 }
 
 .sectionTitle {
   font-size: 2em;
+  margin-bottom: 10px;
   font-weight: normal;
 }
 
@@ -66,6 +69,7 @@ li {
   flex: 1;
   padding: 4vw;
   order: 1;
+  max-width: 550px;
 }
 
 .details-header--main--name {
@@ -162,6 +166,7 @@ li {
   margin: 0 4vw;
   padding: 4vw;
   box-shadow: var(--shadow);
+  max-width: 800px;
 }
 
 .otherThings--list li {
@@ -171,21 +176,56 @@ li {
 /* FOOTER */
 
 .footer {
-  padding: 4vw;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8vw 4vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4vw 4vw 1vw 4vw;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  color: var(--grey);
+  padding: 2vw;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  max-width: 210px;
+}
+
+.footer--links {
+  margin: 15px 0 5px 0;
+}
+
+.footer-content--text {
+  text-align: center;
+  color: var(--grey);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.footer-email-link {
+  font-size: 18px;
+  color: var(--grey);
+  margin-bottom: 10px;
 }
 
 .footer--links a {
-  font-size: 42px;
+  font-size: 36px;
   padding: 5px;
+  color: var(--grey);
 }
 
-main {
+section {
   padding: 4vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (max-width: 660px) {
