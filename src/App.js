@@ -2,26 +2,55 @@ import React, { Component } from "react";
 // ui
 import "@material/button/dist/mdc.button.css";
 import { Button } from "@rmwc/button";
+import { Typography } from "@rmwc/typography";
 // styles
 // import "material-components-web/dist/material-components-web.min.css";
 import "./app.css";
 // comps
-import JumpingVictorianLady from "./comps/JumpingVictorianLady";
 import ProjectCard from "./comps/ProjectCard";
+import SocialMediaLinks from "./comps/SocialMediaLinks";
 // data
 import { projects } from "./PROJECTS";
-import DetailsHeader from "./comps/detailsHeader/DetailsHeader";
+import Link from "./comps/Link";
+import Ruler from "./comps/Ruler";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <DetailsHeader />
-
         {/* 
-            RECENT PROJECTS 
+            CONTACT DEETS
         */}
+
+        <header className={"details-header"}>
+          <div className={"details-header--main"}>
+            <h1 className={"details-header--main--name"}>Chris Dennett</h1>
+            <div className={"details-header--main--biog"}>
+              <p>A meat-based colony of about 42 trillion cells.</p>
+
+              <p>
+                Web developer and occasional maker of weird digital art
+                thingies.
+              </p>
+            </div>
+            <p className={"details-header--main--address"}>
+              Ulverston, Cumbria, UK
+            </p>
+          </div>
+          <div className={"contactLinks"}>
+            <SocialMediaLinks className={"contactLinks--socialMediaLinks"} />
+            <Link
+              className={"header-email-link"}
+              text={"chrisdennett@gmail.com"}
+              url={"mailto:chrisdennett@gmail.com"}
+            />
+          </div>
+        </header>
+
+        <Ruler />
+
         <main>
+          {/* RECENT PROJECTS */}
           <section>
             <div className={"sectionHeader"}>
               <h2 className={"sectionTitle"}>Recent Projects</h2>
@@ -36,6 +65,7 @@ class App extends Component {
             </div>
           </section>
 
+          {/* ARCHIVE */}
           <section className="otherThings">
             <div className={"sectionHeader"}>
               <h2 className={"sectionTitle"}>Quick things</h2>
@@ -115,7 +145,7 @@ class App extends Component {
             </ul>
           </section>
 
-          <section className={"section--twitter"}>
+          {/* <section className={"section--twitter"}>
             <div className={"sectionHeader"}>
               <h2 className={"sectionTitle"}>Twitterings</h2>
               <p className={"sectionSubtitle"}>
@@ -131,9 +161,41 @@ class App extends Component {
                 src="/twitter-feed.html"
               />
             </div>
-          </section>
+          </section> */}
         </main>
-        <JumpingVictorianLady />
+
+        {/* FOOTER */}
+
+        <footer className={"footer"}>
+          <img
+            style={{ background: "#fff", padding: 10 }}
+            src={"Rotoscoping.gif"}
+            alt={"rotoscoping gif"}
+          />
+          <Typography use={"body1"}>
+            <p>
+              You know it's all over when the victorian lady jumps the stool.
+            </p>
+          </Typography>
+
+          <SocialMediaLinks className={"footer--links"} />
+
+          <a
+            href="https://www.buymeacoffee.com/gBw6u42LI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
+              alt="Buy Me A Coffee"
+              style={{
+                height: "auto !important",
+                width: "auto !important",
+                boxShadow: "none"
+              }}
+            />
+          </a>
+        </footer>
       </div>
     );
   }

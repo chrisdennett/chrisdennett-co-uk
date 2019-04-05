@@ -7,49 +7,35 @@ import {
   faInstagram,
   faYoutubeSquare
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "./Link";
 
-const SocialMediaLinks = ({ color = "#000", className }) => {
+const SocialMediaLinks = ({ className }) => {
   return (
     <div className={className}>
-      <a
-        href="https://twitter.com/artflychris"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faTwitterSquare} />
-      </a>
+      <Link
+        url="https://twitter.com/artflychris"
+        text={<FontAwesomeIcon icon={faTwitterSquare} />}
+      />
 
-      <a
-        href="https://www.facebook.com/artfly.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faFacebookSquare} />
-      </a>
+      <Link
+        url="https://www.facebook.com/artfly.io/"
+        text={<FontAwesomeIcon icon={faFacebookSquare} />}
+      />
 
-      <a
-        href="https://www.instagram.com/artfly.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
+      <Link
+        url="https://www.instagram.com/artfly.io/"
+        text={<FontAwesomeIcon icon={faInstagram} />}
+      />
 
-      <a
-        href="https://www.linkedin.com/in/chris-dennett-artfly/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
+      <Link
+        url="https://www.linkedin.com/in/chris-dennett-artfly/"
+        text={<FontAwesomeIcon icon={faLinkedin} />}
+      />
 
-      <a
-        href="https://www.youtube.com/user/nedland42/videos"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faYoutubeSquare} />
-      </a>
+      <Link
+        url="https://www.youtube.com/user/nedland42/videos"
+        text={<FontAwesomeIcon icon={faYoutubeSquare} />}
+      />
     </div>
   );
 };
