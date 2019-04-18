@@ -122,19 +122,6 @@ class App extends Component {
                 style={{ background: "steelblue" }}
                 raised
                 tag={"a"}
-                href="https://www.youtube.com/watch?v=W-JYQq7jBhI"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Door of Perception
-              </Button>{" "}
-              Digital art project using the Kinect depth sensor and projector.
-            </li>
-            <li>
-              <Button
-                style={{ background: "steelblue" }}
-                raised
-                tag={"a"}
                 href="https://ticklypictures.com/projects/jellycam/"
                 target="_blank"
                 rel="noopener noreferrer"

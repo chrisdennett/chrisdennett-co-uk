@@ -17,6 +17,7 @@ export const projects = [
     url: "https://lab.artfly.io/binary-hands",
     twitter: "https://twitter.com/artflychris/status/1088123222745329671"
   },
+
   {
     title: "ArtFly",
     subtitle: "Everybody's art deserves a gallery",
@@ -41,7 +42,25 @@ export const projects = [
     url: "https://youtu.be/Upyn6eKeTyk",
     type: "youtube",
     description:
-      "An interactive digital artwork for Ulverston's Candlelit Walk.",
+      "An interactive digital artwork merging multiple webcams for Ulverston's Candlelit Walk.",
     img: "/img/selfie_400x233.png"
+  },
+  {
+    title: "Learning react-spring",
+    subtitle: "My notes and experiments",
+    description: "Experiments as I learn web animation techniques.",
+    type: "website",
+    img: "/img/learning-react-spring_400x225.png",
+    url: "https://learning-react-spring.netlify.com/",
+    twitter: "https://twitter.com/artflychris/status/1088123222745329671"
+  },
+  {
+    title: "The Door of Perception",
+    subtitle: "Fun with a Kinect Sensor",
+    url: "https://youtu.be/W-JYQq7jBhI",
+    type: "youtube",
+    description:
+      "A digital thing showing people as a cloud of points or a line drawing for Ulverston's Candlelit Walk.",
+    img: "/img/door-of-perception_400x225.png"
   }
 ];
