@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "Pixel Portraits in Kendal Library",
+    subtitle: "Like paint by numbers, but with squares",
+    url: "https://eye-diagram.netlify.com/",
+    type: "website",
+    description:
+      "I'm looking for a way to freelance directly for teachers, making useful web things.",
+    img: "/img/kendal-pixel-portraits_400x300.jpg"
+  },
+  {
+    title: "The Digital Doodle",
+    subtitle: "Dancing webcam digital doodle thing",
+    url: "https://www.youtube.com/watch?v=XhHMHt6uR-s",
+    type: "event",
+    img: "/img/digital-doodle-carlisle_400x209.png",
+    description: "",
+    twitter: "https://twitter.com/artflychris/status/1128652034666790913"
+  },
+  {
     title: "The Eye Project",
     subtitle: "Free interactive diagrams for schools?",
     url: "https://eye-diagram.netlify.com/",
