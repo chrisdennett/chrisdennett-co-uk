@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "Pixel Portraits in Kendal Library",
+    title: "Pixel Portraits in Kendal",
     subtitle: "Like paint by numbers, but with squares",
-    url: "https://eye-diagram.netlify.com/",
+    url: "https://youtu.be/PxOXlb-8_S4",
     type: "website",
     description:
-      "I'm looking for a way to freelance directly for teachers, making useful web things.",
+      "We mading a painted portrait of John Ruskin and a sticker portrait of Jodie (Dr Who) Whittaker.",
     img: "/img/kendal-pixel-portraits_400x300.jpg"
   },
   {
@@ -14,7 +14,8 @@ export const projects = [
     url: "https://www.youtube.com/watch?v=XhHMHt6uR-s",
     type: "event",
     img: "/img/digital-doodle-carlisle_400x209.png",
-    description: "",
+    description:
+      "Throwing shapes and mucking about with my Digital Doodle thing at Do the Doodle in Carlisle.",
     twitter: "https://twitter.com/artflychris/status/1128652034666790913"
   },
   {

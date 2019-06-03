@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // ui
 import "@material/button/dist/mdc.button.css";
 import { Button } from "@rmwc/button";
-import { Typography } from "@rmwc/typography";
 // styles
 // import "material-components-web/dist/material-components-web.min.css";
 import "./app.css";
