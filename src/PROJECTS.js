@@ -58,7 +58,7 @@ export const projects = [
   {
     title: "Mutilated Selfie Booth",
     subtitle: "Beauty to the max",
-    url: "https://youtu.be/Upyn6eKeTyk",
+    url: "https://youtu.be/KBT0gV4TT-4",
     type: "youtube",
     description:
       "An interactive digital artwork merging multiple webcams for Ulverston's Candlelit Walk.",
