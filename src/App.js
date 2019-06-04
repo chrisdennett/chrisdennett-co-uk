@@ -1,16 +1,18 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 // ui
 import "@material/button/dist/mdc.button.css";
 import { Button } from "@rmwc/button";
 // styles
 import "./app.css";
 // comps
-import ProjectCard from "./comps/ProjectCard";
 import SocialMediaLinks from "./comps/SocialMediaLinks";
 // data
 import { projects } from "./PROJECTS";
 import Link from "./comps/Link";
 import Ruler from "./comps/Ruler";
+const ProjectCard = lazy(() => import("./comps/ProjectCard"));
+
+const renderLoader = () => <p>Loading</p>;
 
 const App = () => {
   return (
@@ -21,7 +23,6 @@ const App = () => {
           <h1 className={"details-header--main--name"}>Chris Dennett</h1>
           <div className={"details-header--main--biog"}>
             <p>A meat-based colony of about 42 trillion cells.</p>
-
             <p>
               Web developer and occasional maker of weird digital art thingies.
             </p>
@@ -50,11 +51,13 @@ const App = () => {
             The things I make inbetween freelance work.
           </p>
         </div>
-        <div className={"currentProjects"}>
-          {projects.map(project => {
-            return <ProjectCard key={project.url} {...project} />;
-          })}
-        </div>
+        <Suspense fallback={renderLoader()}>
+          <div className={"currentProjects"}>
+            {projects.map(project => {
+              return <ProjectCard key={project.url} {...project} />;
+            })}
+          </div>
+        </Suspense>
       </section>
 
       <Ruler />
@@ -126,28 +129,9 @@ const App = () => {
         </ul>
       </section>
 
-      {/* <section className={"section--twitter"}>
-            <div className={"sectionHeader"}>
-              <h2 className={"sectionTitle"}>Twitterings</h2>
-              <p className={"sectionSubtitle"}>
-                The things I scroll through, prod and gaze at when I should
-                really be doing life.
-              </p>
-            </div>
-
-            <div className={"socialMediaStuff--iFrame-holder"}>
-              <iframe
-                className={"socialMediaStuff--iFrame"}
-                title={"@ArtFlyChris Twitter Feed"}
-                src="/twitter-feed.html"
-              />
-            </div>
-          </section> */}
-
       <Ruler />
 
       {/* FOOTER */}
-
       <footer className={"footer"}>
         <div className={"footer-content"}>
           <img src={"Rotoscoping.gif"} alt={"rotoscoping gif"} />
@@ -162,22 +146,6 @@ const App = () => {
           <p className={"footer-content--text"}>
             You know it's all over when the victorian lady jumps the stool.
           </p>
-
-          {/* <a
-            href="https://www.buymeacoffee.com/gBw6u42LI"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <img
-            src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png"
-            alt="Buy Me A Coffee"
-            style={{
-              height: "auto !important",
-              width: "auto !important",
-              boxShadow: "none"
-            }}
-            />
-          </a> */}
         </div>
       </footer>
     </div>
