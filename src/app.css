@@ -23,25 +23,13 @@ body {
   letter-spacing: 0.07rem;
 }
 
-h1,
-h2,
-p,
-li,
-a {
+.details-header--main--name,
+.details-header--main--address,
+.details-header--main--biog,
+.details-header--main--biog > p {
   margin: 0;
   font-weight: normal;
-  font-family: "Overpass", sans-serif;
   color: var(--cream);
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  padding: 10px;
 }
 
 .sectionHeader {
@@ -51,9 +39,26 @@ li {
 }
 
 .sectionTitle {
+  margin: 0;
+  font-weight: normal;
+  color: var(--cream);
   font-size: 2em;
   margin-bottom: 10px;
+}
+
+.sectionSubtitle {
+  margin: 0;
   font-weight: normal;
+  color: var(--cream);
+}
+
+.otherThings--list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.otherThings--list li {
+  padding: 10px;
 }
 
 /* HEADER */
@@ -151,6 +156,7 @@ li {
 .project-card--content--header {
   color: black;
   padding-top: 15px;
+  margin: 0;
 }
 
 .project-card--content--sub-heading {

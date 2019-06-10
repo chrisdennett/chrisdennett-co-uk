@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import { useQueryParam, StringParam } from "use-query-params";
 // ui
 import "@material/button/dist/mdc.button.css";
 import { Button } from "@rmwc/button";
@@ -8,6 +9,9 @@ import "./app.css";
 import { projects } from "./PROJECTS";
 // comps
 import ErrorBoundary from "./comps/ErrorBoundary";
+const PixelPortraitRealityCheck = lazy(() =>
+  import("./comps/PixelPortraitRealityCheck")
+);
 const SocialMediaLinks = lazy(() => import("./comps/SocialMediaLinks"));
 const Link = lazy(() => import("./comps/Link"));
 const Ruler = lazy(() => import("./comps/Ruler"));
@@ -16,6 +20,20 @@ const ProjectCard = lazy(() => import("./comps/ProjectCard"));
 const renderLoader = () => <p>Loading</p>;
 
 const App = () => {
+  const [customPage] = useQueryParam("page", StringParam);
+
+  console.log("customPage: ", customPage);
+
+  if (customPage === "realitycheck") {
+    return (
+      <ErrorBoundary>
+        <Suspense fallback={renderLoader()}>
+          <PixelPortraitRealityCheck />
+        </Suspense>
+      </ErrorBoundary>
+    );
+  }
+
   return (
     <div className="app">
       {/* CONTACT DEETS */}
