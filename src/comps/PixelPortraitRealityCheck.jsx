@@ -16,47 +16,62 @@ const PixelPortraitRealityCheck = () => {
         />
       </HeaderBar>
       <Inner>
-        <h1>Pixel Portrait Reality Check</h1>
+        <h1>Reality Check: Chris needs you!</h1>
+        <p>
+          Hello, my name is Chris Dennett and I suffer from commercial
+          ineptitude.
+        </p>
         <ul>
           <li>
-            I'm proving time and time again that I've got no idea how to make
-            money!
+            I've proved time and time again that I've no idea how to make money!
           </li>
           <li>
-            So I thought I'd at least start reality checking my ideas before
-            spending lots of time on them.
-          </li>
-          <li>
-            Still trying to find work that I love doing that will pay me a basic
-            salary.
+            So I thought I'd at least start "reality checking" my potential
+            money-making ideas before spending lots of time on them.
           </li>
         </ul>
-        <p>
-          Whilst at work I was never any good at spotting the commercial
-          viability of a project. Since leaving and trying my own projects, this
-          has become even more apparent! So for my next idea (codename: Pixel
-          Portraits) I want to ask friends to give honest, anonymous advice.
-        </p>
 
-        <h2>A note about the current site</h2>
-        <p>You can see the current site here.</p>
+        <h2>The Latest Idea: Pixel Portraits</h2>
         <p>
-          I've initially created this for personal use - to generate the files I
-          need to run pixel portrait events (
+          A website to help people to create large pixelated portraits out of
+          little, paint by number style squares.
+        </p>
+        <p>
+          We've made a few of these now, at home and more recently at an event
+          in{" "}
           <a
             href={
               "https://www.youtube.com/watch?v=PxOXlb-8_S4&feature=youtu.be"
             }
           >
-            like this one in Kendal Library
+            Kendal library
           </a>
-          ).
         </p>
         <p>
-          I'll tidy things up for others to use freely no matter the results of
-          this survey. I just won't put in the extra work needed to make money
-          from it if everyone tells me its a stupid idea.
+          A draft version of the site with some more detail is here:{" "}
+          <a
+            href={"https://pixelportraits.artfly.io/?showBeta=1&showInfo=1"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            pixelportraits.artfly.io
+          </a>{" "}
         </p>
+        <p>
+          If you fancy giving feedback, have a look at the{" "}
+          <a
+            href={"https://pixelportraits.artfly.io/?showBeta=1&showInfo=1"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            draft site
+          </a>{" "}
+          and answer the 3 annoynous questions below. Do worry about giving
+          website feedback - I know it's unfinished, broken and ugly at the
+          moment! I'm just interested to hear what you think about the idea.
+        </p>
+
+        <h3>THANK YOU!</h3>
         <IFrameHolder>
           <iframe
             title="Pixel Portrait Survey"
@@ -79,7 +94,7 @@ export default PixelPortraitRealityCheck;
 
 const Outer = styled.div`
   min-height: 100vh;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.7);
   background-image: url("/img/linedpaper.png");
   font-family: "Gaegu", cursive;
@@ -95,7 +110,7 @@ const Inner = styled.div`
 const IFrameHolder = styled.div`
   display: flex;
   justify-content: center;
-  height: 150vh;
+  height: 120vh;
   padding: 20px 0 50px 0;
 `;
 
