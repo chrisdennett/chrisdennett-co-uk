@@ -66,7 +66,7 @@ const PixelPortraitRealityCheck = () => {
           >
             draft site
           </a>{" "}
-          and answer the 3 annoynous questions below. Do worry about giving
+          and answer the 3 annoynous questions below. Don't worry about giving
           website feedback - I know it's unfinished, broken and ugly at the
           moment! I'm just interested to hear what you think about the idea.
         </p>
