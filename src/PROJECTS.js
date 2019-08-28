@@ -18,15 +18,15 @@ export const projects = [
       "Throwing shapes and mucking about with my Digital Doodle thing at Do the Doodle in Carlisle.",
     twitter: "https://twitter.com/artflychris/status/1128652034666790913"
   },
-  {
-    title: "The Eye Project",
-    subtitle: "Free interactive diagrams for schools?",
-    url: "https://eye-diagram.netlify.com/",
-    type: "website",
-    description:
-      "I'm looking for a way to freelance directly for teachers, making useful web things.",
-    img: "/img/the-eye-project_400x225.png"
-  },
+  // {
+  //   title: "The Eye Project",
+  //   subtitle: "Free interactive diagrams for schools?",
+  //   url: "https://eye-diagram.netlify.com/",
+  //   type: "website",
+  //   description:
+  //     "I'm looking for a way to freelance directly for teachers, making useful web things.",
+  //   img: "/img/the-eye-project_400x225.png"
+  // },
   {
     title: "Binary Hands",
     subtitle: "Count 100x higher with binary",
